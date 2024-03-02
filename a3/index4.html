@@ -33,9 +33,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-   display: gridl;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 1px;
   }
   
   nav {
@@ -47,8 +44,7 @@ body {
   nav ul {
     margin: 0;
     padding: 0;
-    disply:flex;
-     justify-content:space-between;
+     list-style: none;
   }
   
   nav a {
@@ -66,10 +62,17 @@ body {
 
   .feature {
       width: 200px;
-     float:left
- }
+      }
 
+nav ul {
+   display: flex;
+   justify-content: space-between;
+}
 
+   nav {
+      position: sticky;
+      top: 0;
+   }
 </style>
 
 <!DOCTYPE html>
